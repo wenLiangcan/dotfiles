@@ -1,1 +1,0 @@
-/home/wheely/dotfiles/gibo/gibo-completion.zsh
