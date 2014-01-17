@@ -18,4 +18,7 @@ done
 #deploy oh-my-zsh custom plugins
 ln -s "${dir}/zsh_plugins" "~/.oh-my-zsh/custom/plugins"
 
+mkdir -p "${dir}/zsh_plugins/gibo"
+ln -s "${dir}/gibo/gibo-completion.zsh" "${dir}/zsh_plugins/gibo/gibo.plugin.zsh"
+
 echo "Finished"
