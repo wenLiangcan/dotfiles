@@ -10,3 +10,6 @@
 [submodule "zsh_plugins/pandoc"]
 	path = zsh_plugins/pandoc
 	url = https://gist.github.com/3334048.git
+[submodule "zsh_plugins/yeoman"]
+	path = zsh_plugins/yeoman
+	url = https://github.com/edouard-lopez/yeoman-zsh-plugin.git
