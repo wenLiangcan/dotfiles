@@ -50,7 +50,7 @@ plugins=(git fbterm ssh-agent archlinux cp gem mosh npm pip python rake screen s
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/wheely/.gem/ruby/1.9.1/bin:/home/wheely/.gem/ruby/2.0.0/bin:/home/wheely/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/wheely/.gem/ruby/1.9.1/bin:/home/wheely/.gem/ruby/2.0.0/bin:/home/wheely/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
 export PATH=$PATH:/home/wheely/.cabal/bin
 export CLASSPATH=$CLASSPATH:/usr/share/java/bsh.jar
 
