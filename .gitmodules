@@ -7,3 +7,6 @@
 [submodule "zsh_plugins/grunt"]
 	path = zsh_plugins/grunt
 	url = https://github.com/yonchu/grunt-zsh-completion.git
+[submodule "zsh_plugins/pandoc"]
+	path = zsh_plugins/pandoc
+	url = https://gist.github.com/3334048.git
