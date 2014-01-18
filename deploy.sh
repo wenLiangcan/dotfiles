@@ -18,6 +18,9 @@ done
 #deploy oh-my-zsh custom plugins
 ln -s "${dir}/zsh_plugins" "~/.oh-my-zsh/custom/plugins"
 
+#pretty git log alia: git lg
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
 mkdir -p "${dir}/zsh_plugins/gibo"
 ln -s "${dir}/gibo/gibo-completion.zsh" "${dir}/zsh_plugins/gibo/gibo.plugin.zsh"
 
