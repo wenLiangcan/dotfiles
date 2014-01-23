@@ -9,8 +9,10 @@ mkdir -p ${bkdir}
 echo "...done"
 
 for file in ${files}; do
-    echo "Moving existing .${file} from ~ to ${bkdir}"
-    mv ~/.${file} ${bkdir}/
+    if [ -f ~/.${file} ]; then
+        echo "Moving existing .${file} from ~ to ${bkdir}"
+        mv ~/.${file} ${bkdir}/
+    fi
     echo "Creating symlink to ${file} in ~"
     ln -s ${dir}/${file} ~/.${file}
 done
