@@ -50,15 +50,15 @@ plugins=(git fbterm ssh-agent archlinux cp gem mosh npm pip python rake screen s
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/wheely/.gem/ruby/1.9.1/bin:/home/wheely/.gem/ruby/2.0.0/bin:/home/wheely/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/1.9.1/bin:~/.gem/ruby/2.0.0/bin:~/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
 export PATH=$PATH:/home/wheely/.cabal/bin
 export CLASSPATH=$CLASSPATH:/usr/share/java/bsh.jar
 
 export EDITOR="vim"
 
-export PYTHONSTARTUP="/home/wheely/Applications/pythonstartup.py"
+export PYTHONSTARTUP="~/Applications/pythonstartup.py"
 
-export GIST_HOME="/home/wheely/Documents/Programming/gists"
+export GIST_HOME="~/Documents/Programming/gists"
 
 # Display the current RVM ruby selection
 #PS1="\$(/usr/local/rvm/bin/rvm-prompt) $PS1"
@@ -94,10 +94,25 @@ alias vim="stty stop '' -ixoff ; vim"
 alias vi="vim"
 # `Frozing' tty, so after any command terminal settings will be restored
 ttyctl -f
-alias sysupd='yaourt -Syua'
-alias setup='sudo pacman -S'
-alias syscl='sudo pacman -Sc'
-alias uninstl='sudo pacman -Rs'
+if [ -f /etc/lsb-release ]; then
+    DISTRO=Debian
+else
+    DISTRO=ArchLinux
+fi
+
+alias apt-get='noglob sudo apt-get'
+if [[ ${DISTRO} == "ArchLinux" ]]; then
+    alias sysupd='yaourt -Syua'
+    alias setup='sudo pacman -S'
+    alias syscl='sudo pacman -Sc'
+    alias uninstl='sudo pacman -Rs'
+elif [[ ${DISTRO} == "Debian" ]]; then
+    alias sysupd='apt-get update && apt-get dist-upgrade'
+    alias setup='apt-get install'
+    alias syscl='apt-get autoremove && apt-get autoclean'
+    alias uninstl='apt-get purge'
+fi  
+
 alias wifi='sudo create_ap -w 2 wlp0s19f2u5 enp2s0 FeedAndy@Arch 15986934907'
 alias reboot='sudo reboot'
 alias sv='sudo vim'
