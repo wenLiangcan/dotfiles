@@ -100,7 +100,7 @@ else
     DISTRO=ArchLinux
 fi
 
-alias apt-get='noglob sudo apt-get'
+alias apt-get='noglob sudo apt-fast'
 if [[ ${DISTRO} == "ArchLinux" ]]; then
     alias sysupd='yaourt -Syua'
     alias setup='sudo pacman -S'
