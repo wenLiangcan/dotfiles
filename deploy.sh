@@ -18,6 +18,7 @@ for file in ${files}; do
 done
 
 #deploy oh-my-zsh custom plugins
+mkdir -p "~/.oh-my-zsh/custom"
 ln -s "${dir}/zsh_plugins" "~/.oh-my-zsh/custom/plugins"
 
 #pretty git log alia: git lg
