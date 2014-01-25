@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-dir=~/dotfiles
-bkdir=~/dotfiles_bk
+dir=${HOME}/dotfiles
+bkdir=${HOME}/dotfiles_bk
 files="aria2 autoenv oh-my-zsh pip tty.js zshrc"
 
 echo "Creating ${bkdir} for backup of any existing dotfiles in ~"
@@ -9,17 +9,17 @@ mkdir -p ${bkdir}
 echo "...done"
 
 for file in ${files}; do
-    if [ -f ~/.${file} ]; then
+    if [ -f ${HOME}/.${file} ]; then
         echo "Moving existing .${file} from ~ to ${bkdir}"
-        mv ~/.${file} ${bkdir}/
+        mv ${HOME}/.${file} ${bkdir}/
     fi
     echo "Creating symlink to ${file} in ~"
-    ln -s ${dir}/${file} ~/.${file}
+    ln -s ${dir}/${file} ${HOME}/.${file}
 done
 
 #deploy oh-my-zsh custom plugins
-mkdir -p "~/.oh-my-zsh/custom"
-ln -s "${dir}/zsh_plugins" "~/.oh-my-zsh/custom/plugins"
+mkdir -p "${HOME}/.oh-my-zsh/custom"
+ln -s "${dir}/zsh_plugins" "${HOME}/.oh-my-zsh/custom/plugins"
 
 #pretty git log alia: git lg
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
