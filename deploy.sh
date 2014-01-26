@@ -2,7 +2,7 @@
 
 dir=${HOME}/dotfiles
 bkdir=${HOME}/dotfiles_bk
-files="aria2 autoenv oh-my-zsh pip tty.js zshrc"
+files="autoenv oh-my-zsh pip tty.js zshrc"
 
 echo "Creating ${bkdir} for backup of any existing dotfiles in ~"
 mkdir -p ${bkdir}
