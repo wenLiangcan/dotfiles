@@ -16,3 +16,6 @@
 [submodule "gibo"]
 	path = gibo
 	url = https://github.com/simonwhitaker/gibo.git
+[submodule "zsh_plugins/gvm"]
+	path = zsh_plugins/gvm
+	url = https://github.com/yerinle/zsh-gvm.git
