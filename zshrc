@@ -111,6 +111,7 @@ elif [[ ${DISTRO} == "Debian" ]]; then
     alias setup='apt-get install'
     alias syscl='apt-get autoremove && apt-get autoclean'
     alias uninstl='apt-get purge'
+    source ${HOME}/.gvm/scripts/gvm
 fi  
 
 alias aria2c="aria2c --conf-path=${HOME}/dotfiles/aria2/aria2.conf --dir=${HOME}/Downloads/aria2"
