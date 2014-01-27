@@ -107,7 +107,7 @@ if [[ ${DISTRO} == "ArchLinux" ]]; then
     alias syscl='sudo pacman -Sc'
     alias uninstl='sudo pacman -Rs'
 elif [[ ${DISTRO} == "Debian" ]]; then
-    alias sysupd='apt-get update && apt-get dist-upgrade'
+    alias sysupd='apt-get update;apt-get dist-upgrade'
     alias setup='apt-get install'
     alias syscl='apt-get autoremove && apt-get autoclean'
     alias uninstl='apt-get purge'
