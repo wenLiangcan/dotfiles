@@ -45,7 +45,7 @@ DEFAULT_USER="wheely"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git fbterm ssh-agent archlinux cp gem mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo)
+plugins=(django git fbterm ssh-agent archlinux cp gem mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo)
 
 source $ZSH/oh-my-zsh.sh
 
