@@ -132,6 +132,7 @@ alias gcc='gcc -Wall -std=c99'
 alias visudo='sudo visudo'
 alias rake='noglob rake'
 alias you-get="you-get -o /home/wheely/Videos/"
+alias you-see="you-get -p cvlc"
 alias w32gcc="i686-w64-mingw32-gcc -static-libgcc"
 alias w32g++="i686-w64-mingw32-g++ -static -lpthread"
 alias sogou='you-get --sogou-proxy=0.0.0.0:50106'
