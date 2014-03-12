@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/1.9.1/bin:~/.gem/ruby/2.0.0/bin:~/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
-export PATH=$PATH:/home/wheely/.cabal/bin
+#export PATH=$PATH:/home/wheely/.cabal/bin
 export CLASSPATH=$CLASSPATH:/usr/share/java/bsh.jar
 
 export EDITOR="vim"
@@ -137,7 +137,7 @@ alias proxy='export http_proxy="http://127.0.0.1:8087";export https_proxy="https
 alias w32gcc="i686-w64-mingw32-gcc -static-libgcc"
 alias w32g++="i686-w64-mingw32-g++ -static -lpthread"
 alias sogou='you-get --sogou-proxy=0.0.0.0:50106'
-alias cabal='/home/wheely/.cabal/bin/cabal'
+#alias cabal='/home/wheely/.cabal/bin/cabal'
 alias grep='grep --color=always'
 alias sshuttle='sshuttle --dns -vvr'
 alias ahk='ironahk'
