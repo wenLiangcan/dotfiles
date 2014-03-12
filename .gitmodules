@@ -16,3 +16,6 @@
 [submodule "gibo"]
 	path = gibo
 	url = https://github.com/simonwhitaker/gibo.git
+[submodule "linuxbrew"]
+    path = linuxbrew
+    url = git://github.com/Homebrew/linuxbrew.git
