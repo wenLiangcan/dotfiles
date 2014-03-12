@@ -60,6 +60,9 @@ export PYTHONSTARTUP="~/Applications/pythonstartup.py"
 
 export GIST_HOME="~/Documents/Programming/gists"
 
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
+
 # Display the current RVM ruby selection
 #PS1="\$(/usr/local/rvm/bin/rvm-prompt) $PS1"
 
