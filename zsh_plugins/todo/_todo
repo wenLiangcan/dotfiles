@@ -1,0 +1,36 @@
+#compdef todo
+
+_all_tasks() {
+    tasks=$(todo -a)
+}
+
+local curcontext="$curcontext" state line
+typeset -A opt_args
+
+_arguments \
+    #"1: :((''\:'List undo tasks' cleanup\:'Clear done tasks' clear\:'Clear all tasks'))" \
+    #"2: :((done\:'Check a task' undo\:'Undo a task' remove\:'Remove a task'))" \
+    #'(-a --all)'{-a,--all}'[list all tasks]' \
+    #'(-h --help)'{-h,--help}'[show help]' \
+    #'(-v --version)'{-v,--version}'[show version]' \
+    '1:: :->first' && return 0
+
+#if [[ "$state" == "first" ]]; then
+    #if [[ "$words[1]" == 1 ]]; then
+        #"1: :((a\:saasdfsad))"
+    #fi
+#fi
+
+case "$state" in
+    first)
+        if [[ "$words[1]" == 1 ]]; then
+            _arguments \
+                "1: :((a\:ass))" \
+                '(-a --all)'{-a,--all}'[list all tasks]' \
+                '(-h --help)'{-h,--help}'[show help]' \
+                '(-v --version)'{-v,--version}'[show version]'
+        fi;;
+    *)
+        _arguments "1: :((''\:'List undo tasks' cleanup\:'Clear done tasks' clear\:'Clear all tasks'))"
+        ;;
+esac
