@@ -50,7 +50,7 @@ plugins=(django git fbterm ssh-agent sudo archlinux cp gem mosh npm pip python r
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/1.9.1/bin:~/.gem/ruby/2.0.0/bin:~/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/1.9.1/bin:~/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
 #export PATH=$PATH:/home/wheely/.cabal/bin
 export CLASSPATH=$CLASSPATH:/usr/share/java/bsh.jar
 
