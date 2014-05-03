@@ -106,7 +106,7 @@ fi
 alias apt-get='noglob sudo apt-fast'
 if [[ ${DISTRO} == "ArchLinux" ]]; then
     alias sysupd='yaourt -Syua'
-    alias setup='sudo pacman -S'
+    alias setup='yaourt -S'
     alias syscl='sudo pacman -Sc'
     alias uninstl='sudo pacman -Rs'
 elif [[ ${DISTRO} == "Debian" ]]; then
