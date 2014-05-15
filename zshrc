@@ -56,7 +56,7 @@ export CLASSPATH=$CLASSPATH:/usr/share/java/bsh.jar
 
 export EDITOR="vim"
 
-export PYTHONSTARTUP="~/Applications/pythonstartup.py"
+export PYTHONSTARTUP="${HOME}/Applications/pythonstartup.py"
 
 export GIST_HOME="~/Documents/Programming/gists"
 
