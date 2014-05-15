@@ -1,4 +1,4 @@
-HISTFILE=~/.histfile
+HISTFILE=${HOME}/.histfile
 HISTSIZE=2000
 SAVEHIST=5000
 bindkey -v
@@ -50,15 +50,13 @@ plugins=(django git fbterm ssh-agent sudo archlinux cp gem mosh npm pip python r
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/1.9.1/bin:~/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:~/dotfiles/gibo
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:${HOME}/.gem/ruby/1.9.1/bin:${HOME}/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:${HOME}/dotfiles/gibo
 #export PATH=$PATH:/home/wheely/.cabal/bin
 export CLASSPATH=$CLASSPATH:/usr/share/java/bsh.jar
 
 export EDITOR="vim"
 
 export PYTHONSTARTUP="${HOME}/Applications/pythonstartup.py"
-
-export GIST_HOME="~/Documents/Programming/gists"
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
@@ -115,7 +113,7 @@ elif [[ ${DISTRO} == "Debian" ]]; then
     alias syscl='apt-get autoremove && apt-get autoclean'
     alias uninstl='apt-get purge'
     source ${HOME}/.gvm/scripts/gvm
-fi  
+fi
 
 alias aria2c="aria2c --conf-path=${HOME}/dotfiles/aria2/aria2.conf --dir=${HOME}/Downloads/aria2"
 alias wifi='sudo create_ap -w 2 wlp0s19f2u5 enp2s0 FeedAndy@Arch 15986934907'
@@ -127,7 +125,7 @@ alias tomcat='sudo systemctl start tomcat7'
 alias cat_end='sudo systemctl stop tomcat7'
 alias cat_restart='sudo systemctl restart tomcat7'
 alias xl='python2 /home/wheely/Applications/xunlei-lixian/lixian_cli.py'
-alias vz='vim ~/.zshrc'
+alias vz='vim ${HOME}/.zshrc'
 alias duff='duff -r -f '%n''
 alias irc='irssi'
 alias wine_setting='winetricks'
@@ -164,4 +162,4 @@ alias -s hs='vi'
 alias -s md='vi'
 alias -s markdown='vi'
 
-source ~/.autoenv/activate.sh
+source ${HOME}/.autoenv/activate.sh
