@@ -7,4 +7,4 @@ Installation:
          cd ~/dotfiles
          git submodule init
          git submodule update
-         ./deploy.sh
+         sh ./deploy.sh
