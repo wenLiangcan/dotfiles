@@ -145,7 +145,7 @@ alias refont='fc-cache -vf'
 alias cowsay='fortune | cowsay'
 alias c='picoc -i'
 alias rdesktop='rdesktop -x l -z -P -g 100%'
-alias translate='translate {=zh+en-US}'
+alias trs='translate {=zh+en-US}'
 
 alias -s zip='7z x'
 alias -s rar='7z x'
