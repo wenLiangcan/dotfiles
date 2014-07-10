@@ -145,6 +145,7 @@ alias refont='fc-cache -vf'
 alias cowsay='fortune | cowsay'
 alias c='picoc -i'
 alias rdesktop='rdesktop -x l -z -P -g 100%'
+alias translate='translate {=zh+en-US}'
 
 alias -s zip='7z x'
 alias -s rar='7z x'
@@ -163,3 +164,5 @@ alias -s md='vi'
 alias -s markdown='vi'
 
 source ${HOME}/.autoenv/activate.sh
+
+#[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
