@@ -140,7 +140,6 @@ alias w32g++="i686-w64-mingw32-g++ -static -lpthread"
 alias sogou='you-get --sogou-proxy=0.0.0.0:50106'
 #alias cabal='/home/wheely/.cabal/bin/cabal'
 alias grep='grep --color=always'
-alias sshuttle='sshuttle --dns -vvr'
 alias refont='fc-cache -vf'
 alias cowsay='fortune | cowsay'
 alias c='picoc -i'
@@ -165,5 +164,9 @@ alias -s md='vi'
 alias -s markdown='vi'
 
 source ${HOME}/.autoenv/activate.sh
+
+poorvpn() {
+    sudo sshuttle --dns -vvr $@ 0.0.0.0/0
+}
 
 #[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
