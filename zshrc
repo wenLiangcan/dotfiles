@@ -165,6 +165,8 @@ alias -s hs='vi'
 alias -s md='vi'
 alias -s markdown='vi'
 
+alias -g xs='"$(xsel)"'   # get selected texts
+
 source ${HOME}/.autoenv/activate.sh
 
 poorvpn() {
