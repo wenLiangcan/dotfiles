@@ -124,7 +124,6 @@ alias gbsh='java bsh.Console'
 alias tomcat='sudo systemctl start tomcat7'
 alias cat_end='sudo systemctl stop tomcat7'
 alias cat_restart='sudo systemctl restart tomcat7'
-alias xl='python2 /home/wheely/Applications/xunlei-lixian/lixian_cli.py'
 alias vz='vim ${HOME}/.zshrc'
 alias duff='duff -r -f '%n''
 alias irc='irssi'
@@ -148,6 +147,7 @@ alias trs='translate {=zh+en-US}'
 alias fys='fanyi "$(xsel)"'   # translate selected words by fanyi
 alias trss='trs "$(xsel)"'    # translate selected words by translate
 alias say='espeak'
+alias rbs='export http_proxy="http://127.0.0.1:8118";export https_proxy="https://127.0.0.1:8118";rainbowstream'
 
 alias -s zip='7z x'
 alias -s rar='7z x'
