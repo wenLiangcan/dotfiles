@@ -1,3 +1,4 @@
 pip.log
 *.swp
 zsh_plugins/gibo/*
+zsh-cache
