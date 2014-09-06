@@ -61,6 +61,9 @@ export PYTHONSTARTUP="${HOME}/Applications/pythonstartup.py"
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
 
+# Enabling cheat syntax highlighting
+export CHEATCOLORS=true
+
 # Display the current RVM ruby selection
 #PS1="\$(/usr/local/rvm/bin/rvm-prompt) $PS1"
 
