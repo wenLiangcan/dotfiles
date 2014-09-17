@@ -176,13 +176,14 @@ poorvpn() {
     sudo sshuttle --dns -vvr $@ 0.0.0.0/0
 }
 
-t() {
+todo.sh() {
     if [ -z "$*" ]
     then
-        todo.sh ls
+        /usr/bin/todo.sh ls
     else
-        todo.sh "$*"
+        /usr/bin/todo.sh "$*"
     fi
 }
+alias t='todo.sh'
 
 #[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
