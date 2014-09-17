@@ -151,7 +151,6 @@ alias fys='fanyi "$(xsel)"'   # translate selected words by fanyi
 alias trss='trs "$(xsel)"'    # translate selected words by translate
 alias say='espeak'
 alias rbs='export http_proxy="http://127.0.0.1:8118";export https_proxy="https://127.0.0.1:8118";rainbowstream'
-alias td='todo.sh'
 
 alias -s zip='7z x'
 alias -s rar='7z x'
@@ -175,6 +174,15 @@ source ${HOME}/.autoenv/activate.sh
 
 poorvpn() {
     sudo sshuttle --dns -vvr $@ 0.0.0.0/0
+}
+
+t() {
+    if [ -z "$*" ]
+    then
+        todo.sh ls
+    else
+        todo.sh "$*"
+    fi
 }
 
 #[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
