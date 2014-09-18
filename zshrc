@@ -177,11 +177,10 @@ poorvpn() {
 }
 
 todo.sh() {
-    if [ -z "$*" ]
-    then
+    if (( ! $# )); then
         /usr/bin/todo.sh ls
     else
-        /usr/bin/todo.sh "$*"
+        /usr/bin/todo.sh $@
     fi
 }
 alias t='todo.sh'
