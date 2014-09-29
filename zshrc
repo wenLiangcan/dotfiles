@@ -171,6 +171,7 @@ alias -s markdown='vi'
 alias -g xs='"$(xsel)"'   # get selected texts
 
 source ${HOME}/.autoenv/activate.sh
+source ${HOME}/bin/util.zsh
 
 poorvpn() {
     sudo sshuttle --dns -vvr $@ 0.0.0.0/0
