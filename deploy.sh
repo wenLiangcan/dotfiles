@@ -2,7 +2,7 @@
 
 dir=${HOME}/dotfiles
 bkdir=${HOME}/dotfiles_bk
-files="autoenv linuxbrew npmrc oh-my-zsh pip screenrc tty.js zshrc"
+files="autoenv ctags linuxbrew npmrc oh-my-zsh pip screenrc tty.js zshrc"
 
 echo "Creating ${bkdir} for backup of any existing dotfiles in ~"
 mkdir -p ${bkdir}
