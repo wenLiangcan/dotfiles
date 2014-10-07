@@ -150,7 +150,7 @@ alias trs='translate {=zh+en-US}'
 alias fys='fanyi "$(xsel)"'   # translate selected words by fanyi
 alias trss='trs "$(xsel)"'    # translate selected words by translate
 alias say='espeak'
-alias rbs='export http_proxy="http://127.0.0.1:8118";export https_proxy="https://127.0.0.1:8118";rainbowstream'
+alias rbs='proxychains rainbowstream'
 
 alias -s zip='7z x'
 alias -s rar='7z x'
