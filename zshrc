@@ -1,7 +1,6 @@
 HISTFILE=${HOME}/.histfile
 HISTSIZE=2000
 SAVEHIST=5000
-bindkey -v
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -198,3 +197,22 @@ man() {
     man "$@"
 }
 #[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
+
+# Configurations for vi mode
+bindkey -v
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+function zle-line-init zle-keymap-select {
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
+    zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
