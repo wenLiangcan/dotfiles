@@ -44,7 +44,7 @@ DEFAULT_USER="wheely"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(django git fbterm heroku mercurial ssh-agent sudo archlinux cp gem mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo vi-mode)
+plugins=(django extract git fbterm heroku mercurial ssh-agent sudo archlinux cp gem mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -151,12 +151,6 @@ alias trss='trs "$(xsel)"'    # translate selected words by translate
 alias say='espeak'
 alias rbs='proxychains rainbowstream'
 
-alias -s zip='7z x'
-alias -s rar='7z x'
-alias -s 7z='7z x'
-#alias -s gz='tar -xzvf'
-alias -s gz='lylyx'
-alias -s bz2='tar -xjvf'
 alias -s c='vi'
 #alias -s py='vi'
 alias -s cpp='vi'
