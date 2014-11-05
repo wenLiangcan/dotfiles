@@ -44,7 +44,7 @@ DEFAULT_USER="wheely"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(extract git fbterm mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo vi-mode)
+plugins=(extract git fbterm mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -193,6 +193,7 @@ man() {
 #[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
 
 # Configurations for vi mode
+bindkey -v
 bindkey '^P' up-history
 bindkey '^N' down-history
 bindkey '^?' backward-delete-char
