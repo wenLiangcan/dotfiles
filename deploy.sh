@@ -23,6 +23,9 @@ for i in ${dir}/zsh_plugins/*; do
     ln -s $i ${HOME}/.oh-my-zsh/custom/plugins
 done
 
+# deploy oh-my-zsh custom themes
+ln -s "${dir}/zsh_themes" "${HOME}/.oh-my-zsh/custom/themes"
+
 #pretty git log alia: git lg
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
