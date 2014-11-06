@@ -44,7 +44,7 @@ DEFAULT_USER="wheely"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(extract git fbterm mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo zsh-syntax-highlighting)
+plugins=(extract git fbterm history-substring-search mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -200,5 +200,7 @@ bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 export KEYTIMEOUT=1
