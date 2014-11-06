@@ -19,3 +19,6 @@
 [submodule "linuxbrew"]
     path = linuxbrew
     url = git://github.com/Homebrew/linuxbrew.git
+[submodule "zsh_plugins/zsh-syntax-highlighting"]
+	path = zsh_plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
