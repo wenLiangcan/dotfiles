@@ -203,4 +203,12 @@ bindkey '^r' history-incremental-search-backward
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+# ins mode
+bindkey -M viins '^a'    beginning-of-line
+bindkey -M viins '^e'    end-of-line
+bindkey -M viins '\e.'   insert-last-word
+# cmd mode
+bindkey -M vicmd '^a'    beginning-of-line
+bindkey -M vicmd '^e'    end-of-line
+
 export KEYTIMEOUT=1
