@@ -1,2 +1,2 @@
-#registry = http://npm.stdyun.com/
-registry = http://r.cnpmjs.org
+registry=https://registry.npm.taobao.org
+strict-ssl=true
