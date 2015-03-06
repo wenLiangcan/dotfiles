@@ -143,7 +143,7 @@ alias sogou='you-get --sogou-proxy=0.0.0.0:50106'
 alias grep='grep --color=always'
 alias refont='fc-cache -vf'
 alias cowsay='fortune | cowsay'
-alias c='picoc -i'
+alias ci='picoc -i'
 alias rdesktop='rdesktop -x l -z -P -g 100%'
 alias trs='translate {=zh+en-US}'
 alias fys='fanyi "$(xsel)"'   # translate selected words by fanyi
@@ -151,7 +151,7 @@ alias trss='trs "$(xsel)"'    # translate selected words by translate
 alias say='espeak'
 alias rbs='proxychains rainbowstream'
 
-alias -s c='vi'
+# alias -s c='vi'
 #alias -s py='vi'
 alias -s cpp='vi'
 alias -s htm='vi'
