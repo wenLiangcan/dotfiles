@@ -190,25 +190,3 @@ man() {
     LESS_TERMCAP_us=$'\E[04;38;5;146m' \
     man "$@"
 }
-#[ -s "/home/wheely/.kre/kvm/kvm.sh" ] && . "/home/wheely/.kre/kvm/kvm.sh" # Load kvm
-
-# Configurations for vi mode
-bindkey -v
-bindkey '^P' up-history
-bindkey '^N' down-history
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
-bindkey '^r' history-incremental-search-backward
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-
-# ins mode
-bindkey -M viins '^a'    beginning-of-line
-bindkey -M viins '^e'    end-of-line
-bindkey -M viins '\e.'   insert-last-word
-# cmd mode
-bindkey -M vicmd '^a'    beginning-of-line
-bindkey -M vicmd '^e'    end-of-line
-
-export KEYTIMEOUT=1
