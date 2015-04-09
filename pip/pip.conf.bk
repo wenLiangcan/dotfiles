@@ -1,7 +1,0 @@
-#[global]
-#index-url=http://pypi.hustunique.com/simple
-
-#[install]
-#find-links =
-    #http://pypi.hustunique.com/simple
-    #http://pypi.douban.com/simple
