@@ -128,9 +128,7 @@ alias refont='fc-cache -vf'
 alias cowsay='fortune | cowsay'
 alias ci='picoc -i'
 alias rdesktop='rdesktop -x l -z -P -g 100%'
-alias trs='translate {=zh+en-US}'
 alias fys='fanyi "$(xsel)"'   # translate selected words by fanyi
-alias trss='trs "$(xsel)"'    # translate selected words by translate
 alias say='espeak'
 alias rbs='proxychains rainbowstream'
 
