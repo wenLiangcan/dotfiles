@@ -44,7 +44,7 @@ DEFAULT_USER="wheely"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(extract git fbterm history-substring-search mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo zsh-syntax-highlighting)
+plugins=(colored-man extract git fbterm history-substring-search mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -159,16 +159,4 @@ todo.sh() {
     fi
 }
 alias t='todo.sh'
-
-# colored man page
-man() {
-    env LESS_TERMCAP_mb=$'\E[01;31m' \
-    LESS_TERMCAP_md=$'\E[01;38;5;74m' \
-    LESS_TERMCAP_me=$'\E[0m' \
-    LESS_TERMCAP_se=$'\E[0m' \
-    LESS_TERMCAP_so=$'\E[38;5;246m' \
-    LESS_TERMCAP_ue=$'\E[0m' \
-    LESS_TERMCAP_us=$'\E[04;38;5;146m' \
-    man "$@"
-}
 
