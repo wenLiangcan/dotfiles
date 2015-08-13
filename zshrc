@@ -76,6 +76,8 @@ if [ "$TERM" = "linux" ]; then
     eval $(dircolors /usr/share/dircolors/dircolors.ansi-universal)
 fi
 
+export RUST_SRC_PATH="/usr/local/src/rust/src"
+
 alias vim="stty stop '' -ixoff ; vim"
 alias vi="vim"
 # `Frozing' tty, so after any command terminal settings will be restored
