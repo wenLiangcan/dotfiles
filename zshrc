@@ -63,6 +63,8 @@ export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
 # Enabling cheat syntax highlighting
 export CHEATCOLORS=true
 
+export RUST_SRC_PATH="/usr/local/src/rust/src"
+
 # Display the current RVM ruby selection
 #PS1="\$(/usr/local/rvm/bin/rvm-prompt) $PS1"
 
@@ -76,7 +78,9 @@ if [ "$TERM" = "linux" ]; then
     eval $(dircolors /usr/share/dircolors/dircolors.ansi-universal)
 fi
 
-export RUST_SRC_PATH="/usr/local/src/rust/src"
+source ${HOME}/.autoenv/activate.sh
+
+[[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
 
 alias vim="stty stop '' -ixoff ; vim"
 alias vi="vim"
@@ -146,7 +150,6 @@ alias -s markdown='vi'
 
 alias -g xs='"$(xsel)"'   # get selected texts
 
-source ${HOME}/.autoenv/activate.sh
 source ${HOME}/bin/util.zsh
 
 poorvpn() {
