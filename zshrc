@@ -44,7 +44,7 @@ DEFAULT_USER="wheely"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man extract git fbterm django history-substring-search mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo zsh-syntax-highlighting)
+plugins=(autoenv colored-man extract git fbterm django history-substring-search mercurial ssh-agent sudo archlinux cp mosh npm pip python rake screen systemd autojump yeoman grunt mvn gibo todo zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,8 +77,6 @@ eval "$(rbenv init -)"
 if [ "$TERM" = "linux" ]; then
     eval $(dircolors /usr/share/dircolors/dircolors.ansi-universal)
 fi
-
-source ${HOME}/.autoenv/activate.sh
 
 [[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
 
