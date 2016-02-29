@@ -1,3 +1,4 @@
-registry=https://registry.npm.taobao.org/
+disturl=https://registry.npm.taobao.org/mirrors/node
+registry=https://registry.npm.taobao.org
 strict-ssl=true
 progress=false
