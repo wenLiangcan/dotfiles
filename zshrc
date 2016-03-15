@@ -120,7 +120,6 @@ alias wine_setting='winetricks'
 alias gcc='gcc -Wall -std=c99'
 alias visudo='sudo visudo'
 alias rake='noglob rake'
-alias you-get="you-get -o /home/wheely/Videos/"
 alias you-see="you-get -p cvlc"
 alias proxy='export http_proxy="http://127.0.0.1:8087";export https_proxy="https://127.0.0.1:8087"'
 alias w32gcc="i686-w64-mingw32-gcc -static-libgcc"
