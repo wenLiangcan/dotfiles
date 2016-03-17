@@ -147,6 +147,8 @@ alias -s markdown='vi'
 
 alias -g xs='"$(xsel)"'   # get selected texts
 
+[[ -s "$HOME/.autoenv/activate.sh" ]] && source "$HOME/.autoenv/activate.sh"
+
 source ${HOME}/bin/util.zsh
 
 poorvpn() {
