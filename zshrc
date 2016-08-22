@@ -105,7 +105,6 @@ elif [[ ${DISTRO} == "Debian" ]]; then
 fi
 
 alias aria2c="aria2c --conf-path=${HOME}/dotfiles/aria2/aria2.conf --dir=${HOME}/Downloads/aria2"
-alias wifi='sudo create_ap -w 2 wlp0s19f2u5 enp2s0 FeedAndy@Arch 15986934907'
 alias reboot='sudo reboot'
 alias sv='sudo vim'
 alias bsh='java bsh.Interpreter'
